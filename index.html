@@ -28,29 +28,47 @@
         <button>Appearance</button>
 
         <div class="format">
-            <div id="sizing">
+            <div class="settings-container">
+                
+                <h4>Image Size</h4>
+                
+                <div class="settings-content-container">
+                    
+                    <div class="input-container">
 
-                <h2>Image Size</h2>
-
-                <div id="size-settings" class="settingsBox">
-
-                    <div class="inputBox" id="aspectRatio">
                         <label class="switch">
                             Lock Aspect Ratio
                             <input type="checkbox">
                             <span class="slider round"></span>
                         </label>
+
                     </div>
-                    <div class="inputBox" id="widthHeight">
-                        Width <input type="text"> pixels
-                        Height <input type="text"> pixels
+
+                    <div class="input-container">
+
+                        <div class="setting">
+                            Width <input type="text" class="small-text-input"> pixels
+                        </div>
+
+                        <div class="setting">
+                            Height <input type="text" class="small-text-input"> pixels
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="setting-content-container">
+                    
+                    <div class="settings-box">
+                        <input type="radio" name="quality"> Resample
+                        <input type="radio" name="quality"> Resized
                     </div>
                 </div>
 
-                <div id="image-quality" class="settingsBox">
-                    <input type="radio" name="quality"> Resample
-                    <input type="radio" name="quality"> Resized
+                   
+
+
                 </div>
+
 
 
             </div>
