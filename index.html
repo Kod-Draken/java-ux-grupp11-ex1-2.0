@@ -30,27 +30,33 @@
             </div>
             <div class="tabs__body">
                 <div class="tabs__content is-active">
-                    <h2 class="tabs__title">Image size</h2>
-                    <p>ALL CODE GOES HERE</p>
 
-                    <h2 class="crop__image">Crop image</h2>
-                    <p>Crop image code goes here</p>
+                    <div class="image__size">
+                        <h2 class="tabs__title">Image size</h2>
+                        <p>ALL CODE GOES HERE</p>
+                    </div>
 
-                    <h2 class="change"></h2>
-                    <div id="change">
-                        <h2>Change</h2>
-                        <button>
-                            <img src="assets/ROTERA.svg" alt="rotate-icon">
-                            Rotate 90&deg;C
-                        </button>
-                        <button>
-                            <img src="assets/FLIP2.svg" alt="flip-icon">
-                            Flip Horizontally
-                        </button>
-                        <button>
-                            <img src="assets/FLIP1.svg" alt="flip-icon">
-                            Flip Vertically
-                        </button>
+                    <div class="crop__image">
+                        <h2 class="crop__title">Crop image</h2>
+                        <p>Crop image code goes here</p>
+                    </div>
+
+                    <div class="rotate__image">
+                        <h2 class="change">Change</h2>
+                        <div id="rotate__buttons">
+                            <button>
+                                <img src="assets/ROTERA.svg" alt="rotate-icon">
+                                Rotate 90&deg;C
+                            </button>
+                            <button>
+                                <img src="assets/FLIP2.svg" alt="flip-icon">
+                                Flip Horizontally
+                            </button>
+                            <button>
+                                <img src="assets/FLIP1.svg" alt="flip-icon">
+                                Flip Vertically
+                            </button>
+                    </div>
                     </div>
 
                 </div>
@@ -92,7 +98,7 @@
                         <div class="setting">
                             <div class="setting-text-prefix">Width</div>
                             <input type="text" class="small-text-input">
-                            <div class="setting-text-suffix">pixels</div>
+                            <div class="setting-text-suffix">px</div>
                         </div>
                         <div class="setting">
                             <div class="setting-text-prefix">Height</div>
@@ -100,6 +106,7 @@
                             <div class="setting-text-suffix">pixels</div>
                         </div>
                     </div>
+                </div>
                 </div>
 
                 <div class="setting-content-container">

@@ -88,10 +88,17 @@ nav>#print-save-buttons {
     display: block;
 }
 
-.tabs__title {
-    margin-bottom: 20px;
+.image__size {
+    margin-top: 10px;
 }
 
+.crop__image {
+    margin-top: 30px;
+}
+
+.rotate__image {
+    margin-top: 30px;;
+}
 
 
 
@@ -131,16 +138,47 @@ h4 {
     margin: 0;
 }
 
-.settings-container {
-    margin: .5rem 0;
+input, button {
+    cursor: pointer;
 }
 
-.settings-content-container {
+input[type="text"] {
+    cursor: auto;
+}
+
+#top-bar-buttons {
+    background-color: #000;
+    display: flex;
+
+    >button {
+        width: 100%;
+        border: 0;
+        background-color: gray;
+    }
+
+}
+
+#format {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.settings-container-1 {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0;
+    gap: 1.25rem;
+}
+
+.settings-container-2 {
     margin: .5rem 1.25rem;
     display: flex;
+    gap: 2.5rem;
 }
 
-.input-container {
+.settings-container-3 {
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -149,17 +187,21 @@ h4 {
 
 .setting {
     display: flex;
+    align-items: center;
+}
+
+.setting-text-prefix {
+    min-width: 2.5rem;
+    margin-right: 1rem;
+    flex: 1;
 }
 
 .small-text-input {
     width: 2rem;
     background-color: #D9D9D9;
     border: none;
-}
+    flex: 2;
 
-.setting-text-prefix {
-    width: 2.5rem;
-    margin-right: 1rem;
 }
 
 .setting-text-suffix {
