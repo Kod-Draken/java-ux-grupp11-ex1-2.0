@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script></script>
+</head>
+
+<body>
+
+    <nav>
+        <div id="add-files-button">
+            <input id="add-files" type="button" value="Add files">
+        </div>
+        <div id="print-save-buttons">
+            <input id="print" type="button" value="Print">
+            <input id="save" type="button" value="Save">
+        </div>
+
+    </nav>
+
+    <!-- FORMAT-VIEW -->
+    <div id="main">
+
+        <div id="settings-window">
+            <button id="display-format-button">format</button>
+            <button id="display-appearance-button">Appearance</button>
+        </div>
+
+        <div class="format">
+            <div class="settings-container">
+                <h4>Image Size</h4>
+                <div class="settings-content-container">
+                    
+                    <div class="input-container">
+                        <label class="switch">
+                            Lock Aspect Ratio
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+
+                    <div class="input-container">
+                        <div class="setting">
+                            <div class="setting-text-prefix">Width</div>
+                            <input type="text" class="small-text-input">
+                            <div class="setting-text-suffix">pixels</div>
+                        </div>
+                        <div class="setting">
+                            <div class="setting-text-prefix">Height</div>
+                            <input type="text" class="small-text-input"> 
+                            <div class="setting-text-suffix">pixels</div>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="setting-content-container">
+                    
+                    <div class="settings-box">
+                        <input type="radio" name="quality"> Resample
+                        <input type="radio" name="quality"> Resized
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div id="crop">
+                <h2>Crop Image</h2>
+                Lock aspect ratio<input type="checkbox">
+                Width <input type="text"> pixels
+                Height <input type="text"> pixels
+
+                Crop from:
+                <div class="crop-buttons">
+                    <input type="radio" name="crop"> Top left corner
+                    <input type="radio" name="crop"> Bottom left corner
+                    <input type="radio" name="crop"> Top right corner
+                    <input type="radio" name="crop"> Bottom right corner
+                    <input type="radio" name="crop"> Center
+                </div>
+
+            </div>
+        </div>
+            <div id="change">
+                <h2>Change</h2>
+                <button>
+                    <img src="assets/ROTERA.svg" alt="rotate-icon">
+                    Rotate 90&deg;C
+                </button>
+                <button>
+                    <img src="assets/FLIP2.svg" alt="flip-icon">
+                    Flip Horizontally
+                </button>
+                <button>
+                    <img src="assets/FLIP1.svg" alt="flip-icon">
+                    Flip Vertically
+                </button>
+            </div>
+
+            <!-- APPEARANCE-VIEW  -->
+
+            <div class="appearance">
+                <h2>Color Adjustments</h2>
+                <div>
+                    <p>Desaturation Change to toggle</p> 
+                    <input type="radio" name="desaturation">
+                    <p>Tint</p>
+                    <input type="range"><br>
+                    
+                    <input type="color" name="color" id="">
+                    Saturation
+                    <input type="range"><br>
+                    Hue
+                    <input type="range"><br>
+                    Brightness
+                    <input type="range"><br>
+    
+                </div>
+
+
+        </div>
+    </div>
+
+</body>
+
+</html>
