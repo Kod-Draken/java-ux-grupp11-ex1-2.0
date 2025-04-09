@@ -22,128 +22,129 @@
 
     </nav>
 
-    <div id="main">
-
+    <div id="top-bar-buttons">
         <button>Format</button>
         <button>Appearance</button>
-
-        <div class="format-settings">
-            <div class="settings-container">
-                
+    </div>
+    <div id="main">
+        
+        
+        <div class="format">
+            <div class="settings-container-1">
+            
                 <h4>Image Size</h4>
-                
-                <div class="settings-content-container">
-                    
-                    <div class="input-container">
 
-                        <label class="switch">
-                            Lock Aspect Ratio
+                <div class="settings-container-2">
+
+                    <div class="settings-container-3">
+
+                        <div class="setting">
+                            
+                            <div class="setting-text-prefix">Lock Aspect Ratio</div>
                             <input type="checkbox">
                             <span class="slider round"></span>
-                        </label>
+                        </div>
 
                     </div>
 
-                    <div class="input-container">
+                    <div class="settings-container-3">
 
                         <div class="setting">
                             <div class="setting-text-prefix">Width</div>
                             <input type="text" class="small-text-input">
-                            <div class="setting-text-suffix">pixels</div>
+                            <div class="setting-text-suffix">px</div>
                         </div>
 
                         <div class="setting">
                             <div class="setting-text-prefix">Height</div>
-                            <input type="text" class="small-text-input"> 
-                            <div class="setting-text-suffix">pixels</div>
+                            <input type="text" class="small-text-input">
+                            <div class="setting-text-suffix">px</div>
                         </div>
                     </div>
-                </div>  
+                </div>
 
-                <div class="setting-content-container">
-                    
-                    <div class="input-container">
+                <div class="settings-container-2">
+
+                    <div class="settings-container-3" id="image-process-radios">
+                        
                         <div class="setting">
-                            <input type="radio" name="quality"> 
-                            <div class="setting-text-suffix">
-                                Resample
-                            </div>      
-
+                            <input type="radio" name="quality">
+                            <div class="setting-text-suffix">Resample</div>
                         </div>
+                        
                         <div class="setting">
-                            <input type="radio" name="quality"> 
-                            <div class="setting-text-suffix">
-                                Resized
-                            </div>      
-
+                            <input type="radio" name="quality">
+                            <div class="setting-text-suffix">Resized</div>
+                            
                         </div>
-                         
+
                     </div>
-                </div>
-
-                   
-
 
                 </div>
 
 
 
-            </div>
-            <div id="crop">
-                <h2>Crop Image</h2>
-                Lock aspect ratio<input type="checkbox">
-                Width <input type="text"> pixels
-                Height <input type="text"> pixels
-
-                Crop from:
-                <div class="crop-buttons">
-                    <input type="radio" name="crop"> Top left corner
-                    <input type="radio" name="crop"> Bottom left corner
-                    <input type="radio" name="crop"> Top right corner
-                    <input type="radio" name="crop"> Bottom right corner
-                    <input type="radio" name="crop"> Center
-                </div>
 
             </div>
-            <div id="change">
-                <button>
-                    <img src="assets/ROTERA.svg" alt="rotate-icon">
-                    Rotate 90&deg;C
-                </button>
-                <button>
-                    <img src="assets/FLIP2.svg" alt="flip-icon">
-                    Flip Horizontally
-                </button>
-                <button>
-                    <img src="assets/FLIP1.svg" alt="flip-icon">
-                    Flip Vertically
-                </button>
 
-            </div>
+
+
         </div>
-        <div class="appearance">
-            <h2>Color Adjustments</h2>
-            <div>
-                Desaturation (toggle) <br>
-                Tint
-                <input type="range"><br>
-                <input type="color" name="color" id="">
-                Saturation
-                <input type="range"><br>
-                Hue
-                <input type="range"><br>
-                Brightness
-                <input type="range"><br>
+        <div id="crop">
+            <h2>Crop Image</h2>
+            Lock aspect ratio<input type="checkbox">
+            Width <input type="text"> pixels
+            Height <input type="text"> pixels
 
-            </div>
-            <div>
-                <h2>Change</h2>
-                <button>Rotate 90</button>
-                <button>Flip horizontally</button>
-                <button>Flip vertically</button>
+            Crop from:
+            <div class="crop-buttons">
+                <input type="radio" name="crop"> Top left corner
+                <input type="radio" name="crop"> Bottom left corner
+                <input type="radio" name="crop"> Top right corner
+                <input type="radio" name="crop"> Bottom right corner
+                <input type="radio" name="crop"> Center
             </div>
 
         </div>
+        <div id="change">
+            <button>
+                <img src="assets/ROTERA.svg" alt="rotate-icon">
+                Rotate 90&deg;C
+            </button>
+            <button>
+                <img src="assets/FLIP2.svg" alt="flip-icon">
+                Flip Horizontally
+            </button>
+            <button>
+                <img src="assets/FLIP1.svg" alt="flip-icon">
+                Flip Vertically
+            </button>
+
+        </div>
+    </div>
+    <div class="appearance">
+        <h2>Color Adjustments</h2>
+        <div>
+            Desaturation (toggle) <br>
+            Tint
+            <input type="range"><br>
+            <input type="color" name="color" id="">
+            Saturation
+            <input type="range"><br>
+            Hue
+            <input type="range"><br>
+            Brightness
+            <input type="range"><br>
+
+        </div>
+        <div>
+            <h2>Change</h2>
+            <button>Rotate 90</button>
+            <button>Flip horizontally</button>
+            <button>Flip vertically</button>
+        </div>
+
+    </div>
     </div>
 
 </body>
