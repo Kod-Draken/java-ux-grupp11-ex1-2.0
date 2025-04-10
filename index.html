@@ -31,33 +31,155 @@
             <div class="tabs__body">
                 <div class="tabs__content is-active">
 
-                    <div class="image__size">
-                        <h2 class="tabs__title">Image size</h2>
-                        <p>ALL CODE GOES HERE</p>
-                    </div>
-
-                    <div class="crop__image">
-                        <h2 class="crop__title">Crop image</h2>
-                        <p>Crop image code goes here</p>
-                    </div>
-
-                    <div class="rotate__image">
-                        <h2 class="change">Change</h2>
-                        <div id="rotate__buttons">
-                            <button>
-                                <img src="assets/ROTERA.svg" alt="rotate-icon">
-                                Rotate 90&deg;C
-                            </button>
-                            <button>
-                                <img src="assets/FLIP2.svg" alt="flip-icon">
-                                Flip Horizontally
-                            </button>
-                            <button>
-                                <img src="assets/FLIP1.svg" alt="flip-icon">
-                                Flip Vertically
-                            </button>
-                    </div>
-                    </div>
+                    <div id="format">
+                        <div class="settings-section">
+            
+                            <h4>Image Size</h4>
+            
+                            <div class="setting-row">
+            
+                                <div class="setting-group">
+            
+                                    <div class="setting">
+            
+                                        <label>Lock Aspect Ratio</label>
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </div>
+            
+                                </div>
+            
+                                <div class="setting-group">
+            
+                                    <div class="setting">
+                                        <label>Width</label>
+                                        <input type="text" class="small-text-input">
+                                        <span class="suffix">px</span>
+                                    </div>
+            
+                                    <div class="setting">
+                                        <label>Height</label>
+                                        <input type="text" class="small-text-input">
+                                        <span class="suffix">px</span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="setting-row">
+            
+                                <div class="setting-group" id="image-process-radios">
+            
+                                    <div class="setting">
+                                        <input type="radio" name="quality">
+                                        <span title="Reduced Image Quality Smaller File Size">Resample</span>
+                                    </div>
+            
+                                    <div class="setting">
+                                        <input type="radio" name="quality">
+                                        <span>Resized</span>
+            
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                        <div class="settings-section">
+            
+                            <h4>Crop Image</h4>
+                            <div class="setting-row">
+            
+                                <div class="setting-group">
+            
+                                    <div class="setting">
+            
+                                        <label>Lock Aspect Ratio</label>
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+            
+                                    </div>
+            
+                                </div>
+            
+                                <div class="setting-group">
+            
+                                    <div class="setting">
+                                        <label>Width</label>
+                                        <input type="text" class="small-text-input">
+                                        <span class="suffix">px</span>
+                                    </div>
+            
+                                    <div class="setting">
+                                        <label>Height</label>
+                                        <input type="text" class="small-text-input">
+                                        <span class="suffix">px</span>
+                                    </div>
+                                </div>
+                            </div>
+            
+                            <div class="setting-row">
+                                <div class="setting-group">
+                                    Crop from:
+                                </div>
+                                <div class="setting-group">
+                                    <div class="setting">
+                                        <input type="radio" name="crop">
+                                        <span>Top left corner</span>
+                                    </div>
+                                    <div class="setting">
+                                        <input type="radio" name="crop">
+                                        <span>Bottom left corner</span>
+                                    </div>
+            
+                                </div>
+                                <div class="setting-group">
+                                    <div class="setting">
+                                        <input type="radio" name="crop">
+                                        <span>Top right corner</span>
+                                    </div>
+                                    <div class="setting">
+                                        <input type="radio" name="crop">
+                                        <span>Bottom right corner</span>
+                                    </div>
+            
+                                </div>
+                                <div class="setting-group">
+                                    
+                                    <div class="setting">
+                                        <input type="radio" name="crop">
+                                        <span>Center</span>
+                                    </div>
+            
+                                </div>
+            
+                            </div>
+            
+                        </div>
+                        <div class="settings-section">
+            
+                            <h4>Change</h4>
+            
+                            <div class="setting-row">
+            
+                                <button class="change-buttons">
+                                    <img src="assets/ROTERA.svg" alt="rotate-icon">
+                                    Rotate 90&deg;C
+                                </button>
+            
+                                <button class="change-buttons">
+                                    <img src="assets/FLIP1.svg" alt="flip-icon">
+                                    Flip Horizontally
+                                </button>
+            
+                                <button class="change-buttons">
+                                    <img src="assets/FLIP2.svg" alt="flip-icon">
+                                    Flip Vertically
+                                </button>
+            
+                            </div>
+                        </div>
+            
 
                 </div>
                 <div class="tabs__content">
@@ -96,14 +218,14 @@
 
                     <div class="input-container">
                         <div class="setting">
-                            <div class="setting-text-prefix">Width</div>
+                            <label>Width</div>
                             <input type="text" class="small-text-input">
-                            <div class="setting-text-suffix">px</div>
+                            <span class="suffix">px</span>
                         </div>
                         <div class="setting">
-                            <div class="setting-text-prefix">Height</div>
+                            <label>Height</div>
                             <input type="text" class="small-text-input">
-                            <div class="setting-text-suffix">pixels</div>
+                            <span>pixels</div>
                         </div>
                     </div>
                 </div>
