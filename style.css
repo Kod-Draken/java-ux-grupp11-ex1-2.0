@@ -16,12 +16,17 @@ body {
     padding: 50px;
 }
 
+
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 917px;
-    width: 100%;
+    
     gap: 45px
+}
+
+#page-content {
+    display: flex;
+    gap: 2rem;
 }
 
 nav {
@@ -181,6 +186,57 @@ input[name="quality"] {
     padding: .4rem;
     box-shadow: 0 2px 5px gray ;
     gap: .5rem;
+}
+
+#image-catalogue {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 21.5rem;
+}
+
+details {
+    background-color: #E9E9E9;
+    padding: 1rem 1rem;
+
+    summary {
+        
+    }
+
+    p {
+        padding-top: 1rem;
+    }
+}
+
+
+details::before {
+    height: 2.3rem;
+}
+details::after {
+    height: fit-content;
+}
+
+#small-image-scrollbox {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: .62rem;
+}
+
+.image-entry {
+    display: flex;
+    gap: .5rem;
+    height: 1.75rem;
+     
+    img {
+       width: 15%;
+        
+    }
+
+    .image-details {
+        background-color: #D9D9D9;
+        flex: 2;
+    }
 }
 
 
