@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <template id="label__template">
+        <span></span>
+    </template>
+
+    <div class="page__container">
+        <nav>
+            <div id="add-files-button">
+                <input id="add-files" type="button" value="Add files">
+            </div>
+            <div id="print-save-buttons">
+                <input id="print" type="button" value="Print">
+                <input id="save" type="button" value="Save">
+            </div>
+
+        </nav>
+
+        <div id="page-content">
+            <div class="tabs">
+                <div class="tabs__head">
+                    <span class="tabs__toggle">Format</span>
+                    <span class="tabs__toggle is-active">Appearance</span>
+                </div>
+                <div class="tabs__body">
+                    <div class="tabs__content">
+
+                        <div id="format">
+                            <div class="settings-section">
+
+                                <h4 class="tabs__title">Image Size</h4>
+
+                                <div class="setting-row">
+
+                                    <div class="setting-group">
+
+                                        <div class="setting">
+                                            <form>
+                                                <label>Lock Aspect Ratio</label>
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </form>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="setting-group">
+
+                                        <div class="setting">
+                                            <label>Width</label>
+                                            <input type="text" class="small-text-input">
+                                            <span class="suffix">px</span>
+                                        </div>
+
+                                        <div class="setting">
+                                            <label>Height</label>
+                                            <input type="text" class="small-text-input">
+                                            <span class="suffix">px</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="setting-row">
+
+                                    <div class="setting-group" id="image-process-radios">
+
+                                        <div class="setting">
+                                            <input type="radio" name="quality">
+                                            <span title="Reduced Image Quality Smaller File Size">Resample</span>
+                                        </div>
+
+                                        <div class="setting">
+                                            <input type="radio" name="quality">
+                                            <span>Resized</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="settings-section">
+
+                                <h4 class="tabs__title">Crop Image</h4>
+                                <div class="setting-row">
+
+                                    <div class="setting-group">
+
+                                        <div class="setting">
+                                            <form>
+                                                <label>Lock Aspect Ratio</label>
+                                                <input type="checkbox">
+                                                <span class="slider round"></span>
+                                            </form>
+
+                                        </div>
+
+                                    </div>
+
+                                    <div class="setting-group">
+
+                                        <div class="setting">
+                                            <label>Width</label>
+                                            <input type="text" class="small-text-input">
+                                            <span class="suffix">px</span>
+                                        </div>
+
+                                        <div class="setting">
+                                            <label>Height</label>
+                                            <input type="text" class="small-text-input">
+                                            <span class="suffix">px</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="setting-row">
+                                    <div class="setting-group">
+                                        Crop from:
+                                    </div>
+                                    <div class="setting-group">
+                                        <div class="setting">
+                                            <input type="radio" name="crop">
+                                            <span>Top left corner</span>
+                                        </div>
+                                        <div class="setting">
+                                            <input type="radio" name="crop">
+                                            <span>Bottom left corner</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="setting-group">
+                                        <div class="setting">
+                                            <input type="radio" name="crop">
+                                            <span>Top right corner</span>
+                                        </div>
+                                        <div class="setting">
+                                            <input type="radio" name="crop">
+                                            <span>Bottom right corner</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="setting-group">
+
+                                        <div class="setting">
+                                            <input type="radio" name="crop">
+                                            <span>Center</span>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="settings-section">
+
+                                <h4 class="tabs__title">Change</h4>
+
+                                <div class="setting-row">
+
+                                    <button class="change-buttons">
+                                        <img src="assets/ROTERA.svg" alt="rotate-icon">
+                                        Rotate 90&deg;C
+                                    </button>
+
+                                    <button class="change-buttons">
+                                        <img src="assets/FLIP1.svg" alt="flip-icon">
+                                        Flip Horizontally
+                                    </button>
+
+                                    <button class="change-buttons">
+                                        <img src="assets/FLIP2.svg" alt="flip-icon">
+                                        Flip Vertically
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tabs__content is-active">
+
+
+
+                        <!-- <div class="color__section"> -->
+                            <div class="appearance__container">
+
+                                <h4 class="tabs__title">Color Adjustments</h4>
+    
+                                <div class="desaturation__checkbox">
+                                    <label>Desaturation</label>
+                                    <input type="checkbox">
+                                </div>
+    
+                                <div class="tint__container">
+                                    <div class="sliders">
+                                        <label>Tint</label>
+                                        <input type="range" class="slider">
+                                    </div>
+                                    <div class="color__input__container">
+                                        <input type="color" value="#861D1D">
+                                    </div>
+                                </div>
+    
+                                <div class="sliders">
+                                    <label>Saturation</label>
+                                    <input type="range" class="slider">
+                                </div>
+    
+                                <div class="sliders">
+                                    <label>Hue</label>
+                                    <input type="range" class="slider">
+                                </div>
+    
+                                <div class="sliders">
+                                    <label>Brightness</label>
+                                    <input type="range" class="slider">
+                                </div>
+    
+                                <hr>
+
+                                <div class="frame__container">
+                                    <div class="frame__checkbox">
+                                        <h4 class="tabs__title">Frame</h4>
+                                        <input type="checkbox">
+                                    </div>
+                                   
+                                    <div class="frame__settings">
+                                        <div class="color__setting">
+                                            <label>Color</label>
+                                            <div class="color__input__container">
+                                                <input type="color" value="#861D1D">
+                                            </div>
+                                        </div>
+                                        <div class="weight__setting">
+                                            <label>Weight</label>
+                                            <input type="number" min="0" max="100" step="1">
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+
+                            </div>
+
+    
+                        <!-- </div> -->
+
+
+
+                    </div>
+                </div>
+            </div>
+            <div id="image-catalogue">
+
+                <img id="image-preview" src="assets/example.jpg" alt="Preview">
+                <details>
+                    <summary>Changes</summary>
+                    <p>This is what has changed in the image</p>
+                </details>
+                <details>
+                    <summary>View</summary>
+                    <div id="small-image-scrollbox">
+                        <div class="image-entry">
+                            <img src="assets/example.jpg" alt="small-image-preview">
+                            <div class="image-details">
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                </details>
+
+            </div>
+
+        </div>
+
+
+</body>
+
+</html>
