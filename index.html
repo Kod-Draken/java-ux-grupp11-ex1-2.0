@@ -20,7 +20,8 @@
     <div class="page-container">
         <nav>
             <div id="add-files-button">
-                <input id="add-files" type="button" value="Add files">
+                <input 
+            id="add-files" type="button" value="Add files">
             </div>
             <div id="print-save-buttons">
                 <input id="print" type="button" value="Print">
@@ -79,20 +80,26 @@
 
                                         <div class="setting">
                                             <input  class="radio-label" type="radio" name="quality">
-                                            <span title="Reduced Image Quality Smaller File Size">Resample</span>
+                                            <span >
+                                                Resample
+                                                <img title="Reduced image quality, smaller file size" class="tooltip" src="assets/question-mark-svgrepo-com.svg" alt="info">
+                                            </span>
                                         </div>
 
                                         <div class="setting">
                                             <input  class="radio-label" type="radio" name="quality">
-                                            <span>Resized</span>
+                                            <span>
+                                                Resized
+                                                <img title="Keep image quality, larger file size" class="tooltip" src="assets/question-mark-svgrepo-com.svg" alt="info">
+                                            </span>
 
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
+
+                            <div class="separator-line"></div>
+
                             <div class="settings-section">
 
                                 <h4>Crop Image</h4>
@@ -159,12 +166,12 @@
                                             <input type="radio" name="crop">
                                             <span>Center</span>
                                         </div>
-
                                     </div>
-
                                 </div>
-
                             </div>
+
+                            <div class="separator-line"></div>
+
                             <div class="settings-section">
 
                                 <h4>Change</h4>
@@ -192,7 +199,6 @@
                     </div>
 
                     <div class="tabs-content">
-
 
                         <div class="appearance-container">
 
@@ -248,7 +254,7 @@
                                 </div>
                             </div>
 
-                            <hr>
+                            <div class="separator-line"></div>
 
                             <div class="frame-container">
                                 <div class="frame-checkbox">
@@ -272,9 +278,6 @@
                             </div>
 
                         </div>
-
-
-
                     </div>
                 </div>
             </div>
