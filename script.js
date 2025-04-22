@@ -1,5 +1,5 @@
-let tabs = document.querySelectorAll('.tabs__toggle'),
-    contents = document.querySelectorAll('.tabs__content');
+let tabs = document.querySelectorAll('.tabs-toggle'),
+    contents = document.querySelectorAll('.tabs-content');
 
 tabs.forEach((tab, index) => {
     tab.addEventListener('click', () => {

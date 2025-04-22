@@ -13,11 +13,11 @@
 
 
 
-    <template id="label__template">
+    <template id="label-template">
         <span></span>
     </template>
 
-    <div class="container">
+    <div class="page-container">
         <nav>
             <div id="add-files-button">
                 <input id="add-files" type="button" value="Add files">
@@ -31,12 +31,12 @@
 
         <div id="page-content">
             <div class="tabs">
-                <div class="tabs__head">
-                    <span class="tabs__toggle is-active">Format</span>
-                    <span class="tabs__toggle">Appearance</span>
+                <div class="tabs-head">
+                    <span class="tabs-toggle is-active">Format</span>
+                    <span class="tabs-toggle">Appearance</span>
                 </div>
-                <div class="tabs__body">
-                    <div class="tabs__content is-active">
+                <div class="tabs-body">
+                    <div class="tabs-content is-active">
 
                         <div id="format">
                             <div class="settings-section">
@@ -191,41 +191,84 @@
                         </div>
                     </div>
 
-                    <div class="tabs__content">
+                    <div class="tabs-content">
 
 
-                        <div class="color__section">
-                            <h4 class="tabs__title">Color Adjustments</h4>
-                            <div class="desaturation__container">
+                        <div class="appearance-container">
 
-                                <div class="desaturation__checkbox">
-                                    <label>Desaturation</label>
-                                    <input type="radio">
-                                </div>
+                            <h4 class="tabs-title">Color Adjustments</h4>
 
-                                <div class="tint__container">
-                                    <div class="tint__range">
-                                        <label>Tint</label>
-                                        <input type="range">
+                            <div class="desaturation-checkbox">
+                                <label>Desaturation</label>
+                                <input type="checkbox">
+                            </div>
+
+                            <div class="tint-container">
+                                <div class="sliders">
+                                    <label>Tint</label>
+                                    <input type="range" class="slider" id="slider1" min="-50" max="50" value="0">
+                                    <div class="slider-values">
+                                        <span>-50</span>
+                                        <span>0</span>
+                                        <span>+50</span>
                                     </div>
-                                    <input type="color">
                                 </div>
-
-                                <div class="saturation">
-                                    <label>Saturation</label>
-                                    <input type="range">
+                                <div class="color-input-container">
+                                    <input type="color" value="#861D1D">
                                 </div>
+                            </div>
 
-                                <div class="hue">
-                                    <label>Hue</label>
-                                    <input type="range">
+                            <div class="sliders">
+                                <label>Saturation</label>
+                                <input type="range" class="slider" id="slider2" min="-50" max="50" value="0">
+                                <div class="slider-values">
+                                    <span>-50</span>
+                                    <span>0</span>
+                                    <span>+50</span>
                                 </div>
+                            </div>
 
-                                <div class="brightness">
-                                    <label>Brightness</label>
-                                    <input type="range">
+                            <div class="sliders">
+                                <label>Hue</label>
+                                <input type="range" class="slider" id="slider3" min="-50" max="50" value="0">
+                                <div class="slider-values">
+                                    <span>-50</span>
+                                    <span>0</span>
+                                    <span>+50</span>
                                 </div>
+                            </div>
 
+                            <div class="sliders">
+                                <label>Brightness</label>
+                                <input type="range" class="slider" id="slider4" min="-50" max="50" value="0">
+                                <div class="slider-values">
+                                    <span>-50</span>
+                                    <span>0</span>
+                                    <span>+50</span>
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <div class="frame-container">
+                                <div class="frame-checkbox">
+                                    <h4 class="tabs-title">Frame</h4>
+                                    <input type="checkbox">
+                                </div>
+                               
+                                <div class="frame-settings">
+                                    <div class="color-setting">
+                                        <label>Color</label>
+                                        <div class="color-input-container">
+                                            <input type="color" value="#861D1D">
+                                        </div>
+                                    </div>
+                                    <div class="weight-setting">
+                                        <label>Weight</label>
+                                        <input type="number" min="0" max="100" step="1">
+                                    </div>
+                                </div>
+                                
                             </div>
 
                         </div>
@@ -236,6 +279,15 @@
                 </div>
             </div>
 
+            
+            
+            
+            
+            
+            
+            
+            
+            
             <div id="image-catalogue">
                 <div id="image-container">
                     <img id="image-preview" src="assets/example.jpg" alt="Preview">

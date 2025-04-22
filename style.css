@@ -6,8 +6,7 @@
 }
 
 body {
-    /* padding: 2.81rem 3.5rem;  */
-    /* haimen fix this */
+    
     min-height: 40vh;
     display: flex;
     justify-content: center;
@@ -17,7 +16,7 @@ body {
 }
 
 
-.container {
+.page-container {
     display: flex;
     flex-direction: column;
     
@@ -66,12 +65,12 @@ nav>#print-save-buttons {
     background: #F5F5F5;
 }
 
-.tabs__head {
+.tabs-head {
     display: flex;
     align-items: stretch;
 }
 
-.tabs__toggle {
+.tabs-toggle {
     display: flex;
     width: 100%;
     height: 100%;
@@ -84,18 +83,21 @@ nav>#print-save-buttons {
     margin:0px;
 }
 
-.tabs__toggle.is-active {
+.tabs-toggle.is-active {
     background: #F5F5F5;
 }
 
-.tabs__content {
+.tabs-content {
     padding: 45px 56px;
     display: none;
 }
 
-.tabs__content.is-active {
+.tabs-content.is-active {
     display: block;
 }
+
+
+/* CSS for Format tab starts here */
 
 h4 {
     margin: 0;
@@ -105,16 +107,11 @@ input, button {
     cursor: pointer;
 }
 
+
 input[type="text"] {
     cursor: auto;
 }
 
-input[type="radio"]::before {
-    background-color: #AAA;
-    border: 0;
-    color: red;
-
-}
 
 #format {
     display: flex;
@@ -188,6 +185,152 @@ input[name="quality"] {
     gap: .5rem;
 }
 
+/* CSS for appearance tab starts here */
+
+.appearance-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.tint-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sliders {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+.frame-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+    align-self: stretch;
+}
+
+.frame-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+    align-self: stretch;
+}
+
+.frame-settings {
+    display: flex;
+    align-items: center;
+    gap: 79px;
+    align-self: stretch;
+}
+
+.color-setting {
+    display: flex;
+    width: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 11px;
+}
+
+.weight-setting {
+    display: flex;
+    width: 190px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+input[type="number"] {
+    display: flex;
+    height: 39px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    align-self: stretch;
+    background: rgba(217, 217, 217, 0.56);
+    border-style: none;
+    padding-left: 10px;
+}
+
+input[type="color"] {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: none;
+}
+
+.color-input-container {
+    display: flex;
+    align-items: center;
+    width: 190px;
+    height: 39px;
+    background: rgba(217, 217, 217, 0.56);
+}
+
+input[type="number"]:hover {
+    background-color: inherit;
+    border-color: inherit;
+    box-shadow: none;
+}
+
+.sliders {
+    position: relative;
+    width: 100%;
+}
+
+.slider {
+    appearance: none;
+    width: 381px;
+    height: 1px;
+    background: #000;
+}
+
+.slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: #000;
+
+}
+
+.slider-values {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 381px;
+    top: 40px;
+    left: 0;
+    right: 0;
+}
+
+.slider-values span {
+    position: absolute;
+    font-size: 12px;
+    color: #333;
+}
+
+.slider-values span:nth-child(1) {
+    left: -3%;
+}
+
+.slider-values span:nth-child(2) {
+    left: 48%;
+    transform: translateX(-50%);
+}
+
+.slider-values span:nth-child(3) {
+    right: -.5%;
+}
+
+
+/* CSS for sidebar preview starts here  */
+
 #image-catalogue {
     display: flex;
     flex-direction: column;
@@ -251,109 +394,3 @@ details::after {
         }
     }
 }
-
-
-
-/* #main {
-    background-color: #F5F5F5;
-    padding: 3.75rem 5rem;
-    } */
-    /* 
-    #main> #settings-window {
-        display: flex;
-        }
-        
-#main> #settings-window > #display-format-button {
-    display: flex;
-    padding: 6px 0px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-style: none;
-}
-
-#main> #settings-window > #display-appearance-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    flex: 1 0 0;
-    align-self: stretch;
-    border-style: none;
-}
-
-h4 {
-    margin: 0;
-}
-
-input, button {
-    cursor: pointer;
-}
-
-input[type="text"] {
-    cursor: auto;
-}
-
-#top-bar-buttons {
-    background-color: #000;
-    display: flex;
-
-    >button {
-        width: 100%;
-        border: 0;
-        background-color: gray;
-    }
-
-}
-
-#format {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-
-}
-
-.settings-container-1 {
-    display: flex;
-    flex-direction: column;
-    margin: .5rem 0;
-    gap: 1.25rem;
-}
-
-.settings-container-2 {
-    margin: .5rem 1.25rem;
-    display: flex;
-    gap: 2.5rem;
-}
-
-.settings-container-3 {
-    display: flex;
-    flex-direction: column;
-    gap: .5rem;
-
-}
-
-.setting {
-    display: flex;
-    align-items: center;
-}
-
-.setting-text-prefix {
-    min-width: 2.5rem;
-    margin-right: 1rem;
-    flex: 1;
-}
-
-.small-text-input {
-    width: 2rem;
-    background-color: #D9D9D9;
-    border: none;
-    flex: 2;
-
-}
-
-.setting-text-suffix {
-    margin-left: .5rem;
-} */
