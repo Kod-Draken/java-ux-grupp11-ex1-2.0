@@ -192,15 +192,21 @@ input[name="quality"] {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+}
+
+#image-container {
+    background-color: #D9D9D9;
+}
+
+#image-preview {
     width: 21.5rem;
 }
 
 details {
     background-color: #E9E9E9;
-    padding: 1rem 1rem;
 
     summary {
-        
+        padding: 15px;
     }
 
     p {
@@ -216,11 +222,12 @@ details::after {
     height: fit-content;
 }
 
-#small-image-scrollbox {
+.details-content-container {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding-top: .62rem;
+    gap: 1.2rem;
+    padding: 0.62rem 0 0 0;
+    background-color: white;
 }
 
 .image-entry {
@@ -229,13 +236,19 @@ details::after {
     height: 1.75rem;
      
     img {
-       width: 15%;
+       width: 12%;
         
     }
 
     .image-details {
         background-color: #D9D9D9;
+        padding: .3rem;
         flex: 2;
+
+        > p{
+            align-self: center;
+            padding: 0;
+        }
     }
 }
 
