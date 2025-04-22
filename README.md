@@ -2,3 +2,4 @@
 ## Summary
 This is a group exercise where UX- and Java students work together
 to design and create example web applications.
+[Link to the application](https://java-ux-group11-ex1.netlify.app/)
